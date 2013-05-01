@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Tutorials</title>
+		
+		<link rel="shortcut icon" href="favicon.ico" >
+    <link rel="stylesheet" href="css/style.css"/>
+	</head>
+	<body>
+		
+		<div class="navigationbar">
+			<ul class="navbar">
+				<li><span><a href="updates.html">Updates</a></span></li>
+			  <li><span><a href="about.html">About</a></span></li>
+			  <li><span><a href="tutoring.html">Tutoring</a></span></li>
+			  <li><span><a href="tutorials.html">Tutorials</a></span></li>
+			  <li><span><a href="portfolio.html">Portfolio</a></span></li>
+			  <li><span><a href="links.html">Links</a></span></li>
+			  <li><span><a href="contact.html">Contact</a></span></li>
+			 </ul>
+		</div>
+		<div class="header">
+			<h2>Tutorials</h1>
+			
+		</div>
+		<div class="content">
+			<p>
+		    		There are already a lot of great online tutorials for the common issues facing math students. Regurgitating these when I have a links list already would be pointless. For my tutorials I try to focus on topics that are less touched upon, but still important, or at least interesting. My selection of topics is also based on my experiences with clients and what some common issues are that I've noticed that deserve special attention. List items will be filled in as links as I write them. All mathematical symbols are written using <a href="http://www.mathjax.org/">Mathjax</a> with LaTeX markup.
+		    	</p>
+
+		    	<div id="accordion">
+			    	<h3>Elementary </h3>
+			    		<div><p>
+					    	<ul>
+					    		<li><a href="tutorials/arithmetic.html">Mental math and test taking</a></li>
+					    		<li>Proportions, ratios, and similar triangles</li>
+					    		<li>The probability function</li>
+					    	</ul>
+					    	</p>
+				    	</div>
+			    	<h3>Intermediate</h3>
+			    		<div><p>
+				    		<ul>
+				    			<li><a href="tutorials/rationalfunctions.html">Conceptualizing rational functions</a></li>
+				    			<li>Factoring polynomials of degree greater than 2</li>
+				    			<li>Creative problem solving skills</li>
+				    		</ul>
+				    		</p>
+			    		</div>
+			    	<h3>Advanced</h3>
+			    		<div><p>
+				    		<ul>
+				    			<li>Rational functions part 2</li>
+				    			<li>Parameterizing surfaces</li>
+				    		</ul>
+				    		</p>
+			    		</div>
+			    	<h3>Miscellaneous</h3>
+			    		<div><p>
+				    		<ul>
+				    			<li><a href="tutorials/modular.html">Modular arithmetic</a></li>
+				    			<li>Thinking wtih pictures and visualizations</li>
+				    			<li>Logic and proof for non-math majors and secondary school students</li>
+				    		</ul>
+				    		</p>
+			    		</div>
+		    	</div>
+		</div>
+		
+		
+		<div class="footer" style="text-align:center">
+			<p>&copy; Paul Turner 2013</p>
+		</div>
+		<script type="text/javascript" src="js/jquery-1.9.1.js"></script>
+		<script src="./js/jquery-ui-1.10.2.custom.min.js"></script>
+		<script type="text/javascript" src="js/script.js"></script>
+		<script>
+			$(document).ready(function() {
+				$(function() {
+					$('#accordion').accordion();
+				});
+			});
+		</script>
+	</body>
+</html>

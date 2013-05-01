@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Modular Arithmetic</title>
+		
+		<link rel="shortcut icon" href="../favicon.ico" >
+    <link rel="stylesheet" href="../css/style.css"/>
+    <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+	</head>
+	<body>
+		
+		<div class="navigationbar">
+			<ul class="navbar">
+				<li><span><a href="../updates.html">Updates</a></span></li>
+			  <li><span><a href="../about.html">About</a></span></li>
+			  <li><span><a href="../tutoring.html">Tutoring</a></span></li>
+			  <li><span><a href="../tutorials.html">Tutorials</a></span></li>
+			  <li><span><a href="../portfolio.html">Portfolio</a></span></li>
+			  <li><span><a href="../links.html">Links</a></span></li>
+			  <li><span><a href="../contact.html">Contact</a></span></li>
+			 </ul>
+		</div>
+		<div class="header">
+			<h2>Modular Arithmetic</h1>
+			
+		</div>
+		<div class="content">
+			
+			<p>
+					In this tutorial we'll learn ...
+					<ol>
+						<li>What modulus is</li>
+						<li>How to count modulo m</li>
+						<li>Why this is useful</li>
+					</ol>
+				</p>
+				<hr>
+				<p>
+					Modular arithmetic isn't generally part of your high school education. You probably won't even see it in college unless you study math or computer science. The reason I've chosen to include this subject is because, depending on how pedantic you want to get, it's really not a difficult subject and is one of the more interesting topics in discrete mathematics. Historically it's served as a launching point for a lot of abstract algebra, too, a major branch of modern research level mathematics. I've always felt like this is one of the few topics that can get a few uninterested high school students excited about abstraction and help them get a feel for "real math."
+				</p>
+				<p>
+					So what is modular arithmetic? The phrase itself seems to come out of no-where. If I could rename it, personally, I'd probably call it "cyclical arithmetic." Let's start with an example. When we divide the number 36 by 12 the remainder is 0 since \( 12 \times 3 = 36 \). Now let's go up from 36 and keep dividing by 12 like so ...
+					$$
+						\begin{equation}
+							36 = 12 \times 3 + 0
+						\end{equation}
+					$$
+					$$
+						\begin{equation}
+							37 = 12 \times 3 + 1
+						\end{equation}
+					$$
+					$$
+						\begin{equation}
+							38 = 12 \times 3 + 2
+						\end{equation}
+					$$
+					$$
+						\begin{equation}
+							39 = 12 \times 3 + 3
+						\end{equation}
+					$$
+					$$
+						\begin{equation}
+							40 = 12 \times 3 + 4
+						\end{equation}
+					$$
+					$$
+						\begin{equation}
+							41 = 12 \times 3 + 5
+						\end{equation}
+					$$
+					$$\cdot$$
+					$$\cdot$$
+					$$\cdot$$
+					$$
+						\begin{equation}
+							47 = 12 \times 3 + 11
+						\end{equation}
+					$$
+					Notice that the remainder goes from 0 to 11. If we were to start this over again from the next multiple of 12, 48, and look at the remainders again, we'd see the same thing over again ( \(48 = 12 \times 4 + 0, \) \(49 = 12 \times 4 + 1,\) \(\dots, 59 = 12 \times 4 + 11  \)  ). In modular arithmetic, we're interested in the behavior of the remainders with respect to the number we're dividing by (which is called the <em>modulus</em>).
+				</p>
+				<p>
+					The remainders always from from 0 to 11. If we generalize our modulus, 12, to any number, m, then the remainders go from 0 to m-1. Two numbers, a and b, are said to be <em>congruent</em> modulo m when they have the same remainder after being divided by m. So in our example 37 and 49 are congruent modulo 12 since they both have a remainder of 1. There's some special notation that goes with this, too. We write ...
+					$$
+						37 \equiv 49\;(mod\;12)
+					$$
+					See how that works? More generally we write...
+					$$
+						a \equiv b\;(mod\;m)
+					$$
+					To say that a and b have the same remainder after division by m. Notice that this notation doesn't tell you what that remainder actually is! In order to show what the remainder is we just write 37 = 1 mod 12, or 49 = 1 mod 12. But not 37 = 49 mod 12. That's a different relation. (I told you this can get pedantic. Math is like that!) You should think of the remainders 0 through 11 as the "actual" values. The numbers we get from one of the remainders when we count up by 12 are everything it's equal to mod 12. Together all those numbers make up what's called a <em>congruence class</em>. For example, the congruence class of 2 mod 12  is the set {2, 14, 26, 38, 50, etc ...}. And yes there's more notation for that, too. Usually if it's obvious what the mod is, we just write the number with a bar over it like so ...
+					$$
+						\bar{2} = {2, 14, 26, \dots}
+					$$
+				</p>
+				<p>
+					Neat, right? Well, I hope so. So why is this useful? For one, the theory of modular integers applies to just about everything that repeats itself is discrete quantities. Probably the most obvious example is the way in which we keep track of time. Most of our clocks operate modulo 12. At 0 it's midnight, then at 0 = 12 mod 12 again it's noon. Then there's "military time", aka 24-hour time. It's just the same thing but hours are counted mod 24. In computer programming there's a mod operator, %, that's used for innumerable different things like distinguishing between even and odd integers, categorizing the results of a complicated loop into usable chunks of data, and more. Like all things, the more you get into it, the more you'll start to see it around you. So even though modular arithmetic isn't part of your schooling, if you've taken the time to read through this, I hope you've learned that not all math is solving equations or doing word problems. I wish I'd known that when I was in secondary school. Thanks for reading, and good studying!
+				</p>
+
+			
+		</div>
+		
+		
+		<div class="footer" style="text-align:center">
+			<p>&copy; Paul Turner 2013</p>
+		</div>
+		<script type="text/javascript" src="../js/jquery-1.9.1.js"></script>
+		<script type="text/javascript" src="../js/jquery-ui-1.10.2.custom.min.js"></script>
+		<script type="text/javascript" src="../js/script.js"></script>
+		
+	</body>
+</html>

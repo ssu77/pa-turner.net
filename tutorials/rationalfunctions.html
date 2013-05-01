@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Rational Functions</title>
+		
+		<link rel="shortcut icon" href="../favicon.ico" >
+    <link rel="stylesheet" href="../css/style.css"/>
+    <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+	</head>
+	<body>
+		
+		<div class="navigationbar">
+			<ul class="navbar">
+				<li><span><a href="../updates.html">Updates</a></span></li>
+			  <li><span><a href="../about.html">About</a></span></li>
+			  <li><span><a href="../tutoring.html">Tutoring</a></span></li>
+			  <li><span><a href="../tutorials.html">Tutorials</a></span></li>
+			  <li><span><a href="../portfolio.html">Portfolio</a></span></li>
+			  <li><span><a href="../links.html">Links</a></span></li>
+			  <li><span><a href="../contact.html">Contact</a></span></li>
+			 </ul>
+		</div>
+		<div class="header">
+			<h2>How Rational Functions ... functions</h1>
+			
+		</div>
+		<div class="content">
+			<p>
+	    		In this tutorial we will learn...
+	    		<ol>
+	    			<li>How to see rational functions as ratios</li>
+	    			<li>How asymptotes occur on the graph of a rational function</li>
+	    			<li>How to detect flat and vertical asymptotes.</li>
+	    		</ol>
+	    	</p>
+	    	<hr style="width:50%">
+	    	<p>
+	    		A rational function f is defined as follows,
+	    		$$ f(x) = \frac{p(x)}{q(x)} = \frac{a_{n}x^{n} + a_{n-1}x^{n-1} + ... +a_{1}x + a_0}{b_{m}x^{m} + b_{m-1}x^{m-1} + ... +b_{1}x + b_0},$$ Where \( q(x) \neq 0 \).<br>
+	    		This may seem a bit ugly at first glance, and in my experience that alone has been enough to deter otherwise very intelligent students from immediate success. Instead of dealing with that right off the bat let's go back to something we're more familiar with, $$ \frac{a}{b}. $$
+	    		Think of fractions for now as ratios. The whole expression a/b is a measure of how big a is relative to b. Now let's play around with different values for a and b and see what becomes of our ratio. We know that if a = b then a/b = 1. 1 means they're the same in size. Now the only way the ratio can be 0 is if a = 0. Can you see why? There's nothing being added to our ratio like
+	    		$$ \frac{a}{b} + c $$
+	    		Where c could potentially cancel out a/b. Now how can the ratio become infinite? There are two ways. If a is itself infinite or if b is 0. I know, we're not allowed to have 0 in the denominator. Just think about it for now and go along with it. Remember that the ratio is a measure of how big a is compared to b. Naturally if b were 0 then anything of any size is much larger. Infinitely larger, in fact. And it will be "negative" infinite if  a &lt; 0 . Let's forget about a being infinite. Then the ratio a/b goes "flat" if a = 0. It goes "way up" if b = 0 and a &gt; 0 and it goes "way down" if b = 0 and a &lt; 0.
+	    	</p>
+	    	<p>
+	    		Now let a be the polynomial on top, p(x), and b be the polynomial on bottom, q(x), and f(x) be the ratio of p(x) to q(x) for various values of x. We've got the same dynamics going on with f(x) as we do with a/b, except now the exact value of the ratio changes as x does! Now when we had a/b, recall that it went "flat" if and only if a = 0. In the case of p(x) / q(x), this is the same if p(x) = 0. When a/b went to positive or negative infinite for b = 0, p(x) / q(x) does the same  when q(x) = 0.
+	    	</p>
+	    	<p>
+	    		An asymptote of f(x) = p(x)/q(x) is the part of the graph where f(x) goes way up, down, or flattens out to some value. When it flattens out it's a horizontal asymptote. When it explodes (up or down) at some value of x which causes q(x) to be 0, then it's a vertical asymptote.
+	    	</p>
+	    	<h3>Horizontal Asymptotes</h2>
+	    	<p>
+	    		You know how a/b only flattens out to 0, that is, when a = 0? Unfortunately with rational functions it's a bit more complex than that. In order to understand this fully we need to make a slight detour first. Recall that the degree of a polynomial is it's highest power. So \( p(x) = a_{n}x^{n} + a_{n-1}x^{n-1} + ... +a_{1}x + a_0 \) has degree n and \( q(x) = b_{m}x^{m} + b_{m-1}x^{m-1} + ... +b_{1}x + b_0 \) has degree m. Polynomials with higher degrees grow faster than polynomials with lower degree. If the polynomials p and q have the same degree then for the most part they're growing at the same rate. Instead of flattening out to 0, it will flatten out to $$ \frac{a_n}{b_n} $$ remember, p and q both have the same degree here, n. Why does it do this? Since p and q are growing at the same rates, they effectively cancel each other out for large enough values of x in both the positive and negative directions. After they undo eachother what's left are their leading coefficients. The ratio between those two coefficients is the remaining value of f(x) after we've let x go on for long enough. For a more detailed explanation of this, learn calculus!
+	    	</p>
+	    	<h3>Vertical Asymptotes</h2>
+	    	<p>
+	    		In a way this is simpler to understand than horizontal asymptotes. Since a ratio goes to (positive or negative) infinite when the denominator is zero, that's where we're going to see our vertical asymtoptes. So what you have to do is find out for what values of x does q(x) = 0. These are our "forbidden" points that aren't included in the domain of f. You'll see this in the graph of f, too. The line doesn't go over points of x where q(x) = 0. It just explodes up or down and then miraculously comes back on the other side!
+	    	</p>
+	    	<p>
+	    		Finally, there are such things as oblique asymptotes, or diagonal lines to which the graph of a rational function comes closer and closer as x get's large. In a future tutorial I'll give a more thorough treatment of the observations we've made here using basic calculus as well as an explanation of oblique asymptotes!
+	    	</p>
+		
+		<div class="footer" style="text-align:center">
+			<p>&copy; Paul Turner 2013</p>
+		</div>
+		<script type="text/javascript" src="../js/jquery-1.9.1.js"></script>
+		<script type="text/javascript" src="../js/jquery-ui-1.10.2.custom.min.js"></script>
+		<script type="text/javascript" src="../js/script.js"></script>
+		
+	</body>
+</html>
